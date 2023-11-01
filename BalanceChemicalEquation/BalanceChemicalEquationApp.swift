@@ -11,7 +11,7 @@ import SwiftUI
 struct BalanceChemicalEquationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            QuestionView()
         }
     }
 }

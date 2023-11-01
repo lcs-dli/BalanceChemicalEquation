@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4907ECB92AF2AFA800094AAD /* BalanceChemicalEquationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907ECB82AF2AFA800094AAD /* BalanceChemicalEquationApp.swift */; };
-		4907ECBB2AF2AFA800094AAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907ECBA2AF2AFA800094AAD /* ContentView.swift */; };
 		4907ECBD2AF2AFAA00094AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4907ECBC2AF2AFAA00094AAD /* Assets.xcassets */; };
 		4907ECC02AF2AFAA00094AAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4907ECBF2AF2AFAA00094AAD /* Preview Assets.xcassets */; };
+		4907ECCA2AF2B0B500094AAD /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907ECC92AF2B0B500094AAD /* QuestionView.swift */; };
+		4907ECCD2AF2B43300094AAD /* LaTeXSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4907ECCC2AF2B43300094AAD /* LaTeXSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4907ECB52AF2AFA800094AAD /* BalanceChemicalEquation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalanceChemicalEquation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4907ECB82AF2AFA800094AAD /* BalanceChemicalEquationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceChemicalEquationApp.swift; sourceTree = "<group>"; };
-		4907ECBA2AF2AFA800094AAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4907ECBC2AF2AFAA00094AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4907ECBF2AF2AFAA00094AAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4907ECC92AF2B0B500094AAD /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4907ECCD2AF2B43300094AAD /* LaTeXSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				4907ECB82AF2AFA800094AAD /* BalanceChemicalEquationApp.swift */,
-				4907ECBA2AF2AFA800094AAD /* ContentView.swift */,
+				4907ECC72AF2B09900094AAD /* Helpers */,
+				4907ECC82AF2B09E00094AAD /* Models */,
+				4907ECC62AF2B08D00094AAD /* Views */,
 				4907ECBC2AF2AFAA00094AAD /* Assets.xcassets */,
 				4907ECBE2AF2AFAA00094AAD /* Preview Content */,
 			);
@@ -65,6 +69,28 @@
 				4907ECBF2AF2AFAA00094AAD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4907ECC62AF2B08D00094AAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4907ECC92AF2B0B500094AAD /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4907ECC72AF2B09900094AAD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4907ECC82AF2B09E00094AAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,9 @@
 			dependencies = (
 			);
 			name = BalanceChemicalEquation;
+			packageProductDependencies = (
+				4907ECCC2AF2B43300094AAD /* LaTeXSwiftUI */,
+			);
 			productName = BalanceChemicalEquation;
 			productReference = 4907ECB52AF2AFA800094AAD /* BalanceChemicalEquation.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 4907ECAC2AF2AFA700094AAD;
+			packageReferences = (
+				4907ECCB2AF2B43300094AAD /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */,
+			);
 			productRefGroup = 4907ECB62AF2AFA800094AAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4907ECBB2AF2AFA800094AAD /* ContentView.swift in Sources */,
+				4907ECCA2AF2B0B500094AAD /* QuestionView.swift in Sources */,
 				4907ECB92AF2AFA800094AAD /* BalanceChemicalEquationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4907ECCB2AF2B43300094AAD /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/colinc86/LaTeXSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4907ECCC2AF2B43300094AAD /* LaTeXSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4907ECCB2AF2B43300094AAD /* XCRemoteSwiftPackageReference "LaTeXSwiftUI" */;
+			productName = LaTeXSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4907ECAD2AF2AFA700094AAD /* Project object */;
 }
