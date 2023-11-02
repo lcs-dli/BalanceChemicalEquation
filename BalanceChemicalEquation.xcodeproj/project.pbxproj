@@ -12,6 +12,8 @@
 		4907ECC02AF2AFAA00094AAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4907ECBF2AF2AFAA00094AAD /* Preview Assets.xcassets */; };
 		4907ECCA2AF2B0B500094AAD /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907ECC92AF2B0B500094AAD /* QuestionView.swift */; };
 		4907ECCD2AF2B43300094AAD /* LaTeXSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4907ECCC2AF2B43300094AAD /* LaTeXSwiftUI */; };
+		498160672AF41DD000357F5B /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498160662AF41DD000357F5B /* TextfieldView.swift */; };
+		498160692AF42AA000357F5B /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498160682AF42AA000357F5B /* Outcome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		4907ECBC2AF2AFAA00094AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4907ECBF2AF2AFAA00094AAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4907ECC92AF2B0B500094AAD /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		498160662AF41DD000357F5B /* TextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
+		498160682AF42AA000357F5B /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4907ECC92AF2B0B500094AAD /* QuestionView.swift */,
+				498160662AF41DD000357F5B /* TextfieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 		4907ECC82AF2B09E00094AAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				498160682AF42AA000357F5B /* Outcome.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498160692AF42AA000357F5B /* Outcome.swift in Sources */,
 				4907ECCA2AF2B0B500094AAD /* QuestionView.swift in Sources */,
+				498160672AF41DD000357F5B /* TextfieldView.swift in Sources */,
 				4907ECB92AF2AFA800094AAD /* BalanceChemicalEquationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
