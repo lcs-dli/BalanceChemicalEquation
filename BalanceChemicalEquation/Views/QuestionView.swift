@@ -8,15 +8,7 @@
 import SwiftUI
 import LaTeXSwiftUI
 
-struct ChemicalEquation: Identifiable{
-    let id = UUID()
-    let unbalancedEquation: String
-    let correctBalancedNumber: [Int]
-    let spotNeedToBalance: Int
-    let typeOfChemicalReaction: String
-    
-    
-}
+
 let questions: [ChemicalEquation] = [ChemicalEquation(
     unbalancedEquation: "N2 + O2 --> N2O5",
     correctBalancedNumber: [2,5,2],
