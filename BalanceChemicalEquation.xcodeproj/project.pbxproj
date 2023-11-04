@@ -12,6 +12,7 @@
 		4907ECC02AF2AFAA00094AAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4907ECBF2AF2AFAA00094AAD /* Preview Assets.xcassets */; };
 		4907ECCA2AF2B0B500094AAD /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4907ECC92AF2B0B500094AAD /* QuestionView.swift */; };
 		4907ECCD2AF2B43300094AAD /* LaTeXSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4907ECCC2AF2B43300094AAD /* LaTeXSwiftUI */; };
+		495BD0942AF6A47600AD1144 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BD0932AF6A47600AD1144 /* History.swift */; };
 		498160672AF41DD000357F5B /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498160662AF41DD000357F5B /* TextfieldView.swift */; };
 		498160692AF42AA000357F5B /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498160682AF42AA000357F5B /* Outcome.swift */; };
 		4981606B2AF42EF300357F5B /* ChemicalEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981606A2AF42EF300357F5B /* ChemicalEquation.swift */; };
@@ -23,6 +24,7 @@
 		4907ECBC2AF2AFAA00094AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4907ECBF2AF2AFAA00094AAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4907ECC92AF2B0B500094AAD /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		495BD0932AF6A47600AD1144 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		498160662AF41DD000357F5B /* TextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
 		498160682AF42AA000357F5B /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
 		4981606A2AF42EF300357F5B /* ChemicalEquation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemicalEquation.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				498160682AF42AA000357F5B /* Outcome.swift */,
 				4981606A2AF42EF300357F5B /* ChemicalEquation.swift */,
+				495BD0932AF6A47600AD1144 /* History.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495BD0942AF6A47600AD1144 /* History.swift in Sources */,
 				498160692AF42AA000357F5B /* Outcome.swift in Sources */,
 				4907ECCA2AF2B0B500094AAD /* QuestionView.swift in Sources */,
 				498160672AF41DD000357F5B /* TextfieldView.swift in Sources */,

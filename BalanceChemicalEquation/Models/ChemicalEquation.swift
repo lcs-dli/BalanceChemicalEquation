@@ -14,3 +14,5 @@ struct ChemicalEquation: Identifiable{
     let spotNeedToBalance: Int
     let typeOfChemicalReaction: String
 }
+
+

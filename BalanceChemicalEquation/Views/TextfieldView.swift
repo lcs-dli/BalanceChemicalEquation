@@ -14,7 +14,7 @@ struct TextfieldView: View {
     let correctAnswer: Int
     @State var userAnswer = ""
     @State var response: Outcome = .undetermined
-    
+    let indexInList: Int
     //MARK: Computing property
     var body: some View {
         HStack{
@@ -40,9 +40,11 @@ struct TextfieldView: View {
         }else{
             response = .incorrect
         }
+        guessHolder.insert(Int(userAnswer)!, at: indexInList)
+        guessHolder.remove(at: indexInList+1)
     }
 }
 
 #Preview {
-    TextfieldView(correctAnswer: 2)
+    TextfieldView(correctAnswer: 2, indexInList: 2)
 }

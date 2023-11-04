@@ -29,9 +29,14 @@ struct QuestionView: View {
             Text(currentDisplayedEquation.unbalancedEquation)
             Grid{
                 ForEach(1...currentDisplayedEquation.spotNeedToBalance, id: \.self){j in
-                    TextfieldView(correctAnswer: currentDisplayedEquation.correctBalancedNumber[j-1])
+                    TextfieldView(correctAnswer: currentDisplayedEquation.correctBalancedNumber[j-1], indexInList: j-1)
                 }
             }
+            Button(action: {
+                userHistory.append(History(question: currentDisplayedEquation, userGuess: guessHolder))
+            }, label: {
+                Text("Save Result")
+            })
         }
     }
 }
