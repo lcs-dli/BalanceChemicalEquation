@@ -11,6 +11,6 @@ struct History: Identifiable{
     let question: ChemicalEquation
     let userGuess: [Int]
 }
-var guessHolder: [Int] = [-1, -1, -1]
+var guessHolder: [Int] = [0,0,0,0]
 
-var userHistory: [History] = []
+
