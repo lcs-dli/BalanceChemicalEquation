@@ -52,25 +52,33 @@ struct QuestionView: View {
                     VStack {
                         Text(currentDisplayedHistory.question.unbalancedEquation)
                         HStack {
-                            Text("Reacation Type")
+                            Text("Reaction Type")
                             Text(currentDisplayedHistory.question.typeOfChemicalReaction)
                         }
-                        HStack {
-                            Text("Guess: ")
-                            
-                            ForEach(0...currentDisplayedHistory.question.spotNeedToBalance-1, id: \.self){ i in
-                                HStack{
-                                    Text(String(currentDisplayedHistory.userGuess[i]))
-                                }
-                            }
-                        }
+                        
                         
                         HStack {
-                            Text("Correct Answer: ")
+                            VStack {
+                                Text("Guess: ")
+                                
+                                Text("Correct Answer: ")
+                                
+                                Text("")
+                            }
                             
                             ForEach(0...currentDisplayedHistory.question.spotNeedToBalance-1, id: \.self){ i in
                                 HStack{
-                                    Text(String(currentDisplayedHistory.question.correctBalancedNumber[i]))
+                                    VStack {
+                                        Text(String(currentDisplayedHistory.userGuess[i]))
+                                        
+                                        Text(String(currentDisplayedHistory.question.correctBalancedNumber[i]))
+                                        
+                                        if(currentDisplayedHistory.question.correctBalancedNumber[i] == currentDisplayedHistory.userGuess[i]){
+                                            Text(Outcome.correct.rawValue)
+                                        }else{
+                                            Text(Outcome.incorrect.rawValue)
+                                        }
+                                    }
                                 }
                             }
                         }
